@@ -2,26 +2,52 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/*login page */
+.background{
+@apply flex
+   justify-center
+    items-center
+     h-screen bg-gray-100
+
+}
+.box{
+  @apply bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 max-w-md
+}
+.heading{
+  @apply text-center text-2xl font-bold mb-4
+}
+.label{
+  @apply block text-gray-700 text-sm font-bold mb-2
+}
+.inputfield{
+   @apply shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 
+  leading-tight focus:outline-none 
+
+}
+.btndiv{
+  @apply flex items-center justify-between
+}
+.btn{
+  @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none 
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* reg */
+.background1{
+  @apply flex
+     justify-center
+      items-center
+       h-screen bg-stone-200
+  
   }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .box1{
+    @apply bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 max-w-md
   }
+.inputfields{
+  @apply shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 
+ leading-tight  
+
 }
+.btn1{
+  @apply bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded 
+}
+
